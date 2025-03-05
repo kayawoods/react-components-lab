@@ -44,12 +44,14 @@ const weatherForecasts = [
     return (
       <>
         <h1>Local Weather</h1>
+        <section>
           {weatherForecasts.map((weatherForecast) => (
             <WeatherForecast 
               key={weatherForecast.day} 
               weatherForecast={weatherForecast} 
             />
           ))}
+          </section>
        
       </>
     );
